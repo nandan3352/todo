@@ -31,13 +31,13 @@ export function Note({ onDelete }) {
             <Button
               onClick={() => {
                 onDelete(note.id);
-                navigate("/");
+                navigate("/app");
               }}
               variant="outline-danger"
             >
               Delete
             </Button>
-            <Link to="/">
+            <Link to="/app">
               <Button variant="outline-secondary">Back</Button>
             </Link>
           </Stack>
